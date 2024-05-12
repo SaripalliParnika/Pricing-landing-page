@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>music plans</title>
+ <style>
+h2
+{
+text-shadow:3px 3px 10px #000000;
+color:#cccccc;
+text-align:center;
+padding:10px;
+}
+body {
+background-image: linear-gradient(to right,#363636,#f25278);
+border:1px solid rgba(240,240,240,0.1);
+font-family: Tahoma, Verdana, sans-serif;
+margin-top: 100px;
+ margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 200px;
+  width:70%;
+ padding: 10px;
+border-radius:150px;
+ box-shadow: 0 4px 20px 0 #ffffff, 0 6px 20px 0 #ffffff;
+  text-align: center;
+
+}
+.box
+{
+margin-top: 100px;
+ margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 40px;
+  width:90%;
+  border:1px solid rgba(240,240,240,0.1);
+  padding: 10px;
+border-radius:150px;
+  box-shadow: 0 4px 20px 0 #ffffff, 0 6px 20px 0 #ffffff;
+  text-align: center;
+background-image: linear-gradient(to right, #f25278,#242424);
+
+}
+.pricing-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 70vh;
+}
+.pricing-card {
+      
+      border-radius: 50px;
+      padding: 22px;
+      margin: 20px;
+      text-align: center;
+      width: 200px;
+      background-color: #ffffff;
+       box-shadow: 0 4px 20px 0 #666666, 0 6px 50px 0 #171717;
+  text-align: center;
+}
+    
+    .pricing-card p {
+      color: #000000;
+    font-weight:bold;
+
+text-shadow:0px 0px 3px #ffffff;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff69b4;
+    }
+    .btn {
+      background-image: linear-gradient(to right,#363636,#f25278);
+      color: #fff;
+background-color:#9e4244;
+box-shadow: 0 4px 5px 0 #666666, 0 6px 5px 0 #171717;
+  text-align: center;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 10px;
+      cursor: pointer;
+    }
+    .btn:hover {
+     animation: mymove 1s infinite;
+
+    }
+.pricing-card h2
+{
+font-size:26px;
+text-shadow:2px 2px 3px #000000;
+color:#cccccc;
+text-align:center;
+padding:5px;
+}
+.pricing-card:hover {
+  transform: scale(1.1); 
+}
+@keyframes mymove {
+  from {background-image: linear-gradient(to right,#363636,#f25278);}
+  to {background-image: linear-gradient(to right,#f25278,#363636);}
+}
+
+.hello {
+background-image: linear-gradient(to right,#242424,#fda4ba);
+border-radius:50px;
+}
+</style>
+</head>
+<body>
+<h1 style="color:#cccccc;">MUSIC PLANS</h1>
+<div class="box" >
+<h2 style="padding:10px;font-size:40px">choose the best plan that fits you<hr>Experience the differences</h2>
+<div class="pricing-container">
+  <div class="pricing-card">
+<div class="hello">
+    <h2>Basic</h2>
+    <p>₹99.45 for a month<hr>
+         <ul>
+             <li>Offline listening of upto 25 songs</li><br>
+             <li>1 Premium account</li><br>
+             <li>Basic audio quality</li><br>
+         </ul>
+    </p>
+    <p class="price">₹99.45</p>
+    <button class="btn" onclick="myFunction()">Purchase Now</button>
+  </div></div>
+  <div class="pricing-card">
+<div class="hello">
+    <h2>Standard</h2>
+    <p>₹149.45 for a month<hr>
+         <ul>
+             <li>offline listening of upto 40 songs</li><br>
+             <li>1 Premium account</li><br>
+             <li>good audio quality</li><br>
+             <li>Organize listening queue</li<br>
+         </ul>
+    </p>
+    <p class="price">₹149.45</p>
+    <button class="btn"  onclick="myFunction1()">Purchase Now</button>
+  </div></div>
+  <div class="pricing-card">
+<div class="hello">
+    <h2>Premium</h2>
+    <p>₹349.45 for 2 months<hr>
+         <ul>
+             <li>Offline listening of unlimited songs</li><br>
+             <li>2 Premium accounts</li><br>
+             <li>Listen to add free music</li><br>
+             <li>High audio quality</li><br>
+             <li>Organize listening queue</li<br>
+            
+         </ul>
+             
+    </p>
+    <p class="price">₹349.45</p>
+    <button class="btn"  onclick="myFunction2()">Purchase Now</button>
+  </div></div>
+<script>
+function myFunction() {
+  let text = "Are you sure to purchase?";
+  if (confirm(text) == true) {
+    alert("Congratulations! You've Purchased the basic pack of music");
+  } else {
+    alert( "You cancelled the purchase!");
+  }
+ 
+}
+</script>
+<script>
+function myFunction1() {
+  let text = "Are you sure to purchase?";
+  if (confirm(text) == true) {
+    alert("Congratulations! You've Purchased the Standard pack of music");
+  } else {
+    alert( "You cancelled the purchase!");
+  }
+ 
+}
+</script>
+<script>
+function myFunction2() {
+  let text = "Are you sure to purchase?";
+  if (confirm(text) == true) {
+    alert("Congratulations! You've Purchased the Premium pack of music");
+  } else {
+    alert( "You cancelled the purchase!");
+  }
+ 
+}
+</script>
+</div>
+</div>
+</body>
+</html>
